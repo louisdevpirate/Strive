@@ -1,0 +1,97 @@
+@font-face {
+    font-family: 'HK Grotesk Light';
+    src: url('../fonts/hk-grotesk/HKGrotesk-Light.otf');
+}
+
+.body {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* ------------------------------------------------------------------------------------------
+Page d'intro */
+
+.intro {
+    background-color: black;
+}
+
+.intro-logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.main-logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-logo img {
+    width: 100%;
+}
+
+.intro-click {
+    display: none;
+}
+
+.click-here {
+    display: none;
+}
+
+.down-arrow {
+    display: none;
+}
+
+
+@media screen and (min-width: 992px) {
+
+    .intro-logo {
+        min-height: 90vh;
+    }
+
+    .main-logo img {
+        width: 500px;
+    }
+
+    .intro-click {
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+        min-height: 10vh;
+    }
+
+
+    .click-here {
+        display: block;
+        color: white;
+        text-decoration: none;
+        font-size: 1.5rem;
+    }
+
+    .click-here:hover {
+        color: #737373;
+    }
+
+    .click-here:active {
+        color: #737373;
+    }
+
+    .down-arrow {
+        display: block;
+        background-color: black;
+        color: white;
+        border: none;
+        width: 50px;
+    }
+
+    .down-arrow:hover {
+        color: #737373;
+    }
+}
