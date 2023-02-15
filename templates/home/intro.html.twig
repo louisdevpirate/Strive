@@ -1,0 +1,40 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Welcome{% endblock %}
+
+{% block body %}
+
+<div class="intro col-12">
+
+    <div class="container-fluid intro-logo d-flex align-items-center justify-content-center">
+
+        <div class="main-logo col-10 mx-auto">
+
+            <img src="{{ asset('/images/White_logo.png') }}" alt="Strive" class="strive-logo">
+
+        </div>
+
+    </div>
+
+    <div class="container intro-click d-flex flex-column justify-content-end align-items-center">
+
+        <a href="{{ path('app_home')}}" class="click-here text-center">Click Here</a>
+
+    </div>
+
+    <div class="container-fluid mars-and-quote">
+
+        <h1 class="text-center">Mens sana in corpore sano.</h1>
+
+        <img src="{{ asset('/images/Mobile First/Mars.jpg') }}" alt="Mars">
+
+    </div>
+
+
+
+</div>
+{% endblock %}
+
+{% block js %}
+    <script src="{{ asset('js/script.js') }}"></script>
+{% endblock %}
